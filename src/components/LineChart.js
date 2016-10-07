@@ -45,7 +45,7 @@ class LineChart extends React.Component {
     render () {
         const LineChart = rd3.LineChart;
         return  (
-            <div className="col-md-12">
+            <div className="jumbotron" >
                 <LineChart
                 legend={true}
                 data={this.state.data}
