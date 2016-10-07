@@ -46,20 +46,20 @@ data.dataset = [
 	{ time: '8-May-07', value:85.06 },
 	{ time: '9-May-07', value:76.88 },
 	{ time: '10-May-07', value:	67.34 },
-	{ time: '11-May-07', value:	58.74 }
-	// { time: '14-May-07', value:	109.36 },
-	// { time: '15-May-07', value:	107.52 },
-	// { time: '16-May-07', value:	107.34 },
-	// { time: '17-May-07', value:	109.44 },
-	// { time: '18-May-07', value:	110.02 },
-	// { time: '21-May-07', value:	111.98 },
-	// { time: '22-May-07', value:	113.54 },
-	// { time: '23-May-07', value:	112.89 },
-	// { time: '24-May-07', value:	110.69 },
-	// { time: '25-May-07', value:	113.62 },
-	// { time: '29-May-07', value:	114.35 },
-	// { time: '30-May-07', value:	118.77 },
-	// { time: '31-May-07', value:	121.19 }
+	{ time: '11-May-07', value:	58.74 },
+	{ time: '14-May-07', value:	109.36 },
+	{ time: '15-May-07', value:	107.52 },
+	{ time: '16-May-07', value:	107.34 },
+	{ time: '17-May-07', value:	109.44 },
+	{ time: '18-May-07', value:	110.02 },
+	{ time: '21-May-07', value:	111.98 },
+	{ time: '22-May-07', value:	113.54 },
+	{ time: '23-May-07', value:	112.89 },
+	{ time: '24-May-07', value:	110.69 },
+	{ time: '25-May-07', value:	113.62 },
+	{ time: '29-May-07', value:	114.35 },
+	{ time: '30-May-07', value:	118.77 },
+	{ time: '31-May-07', value:	121.19 }
 ];
 
 // Set CSS class for x-axis
