@@ -23,7 +23,8 @@ class App extends Component {
     render(){
         return (
         <div>
-            <h1>React + D3</h1>
+            <h1>MARS Project</h1>
+            <h5>Magnet Authoring and Review System</h5>
             <LineChart lineData={this.state.data} title={this.state.title}/>
         </div>
         );

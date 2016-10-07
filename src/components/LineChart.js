@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import d3 from 'd3';
 import rd3 from 'rd3';
+import Table from './Table';
 
 class LineChart extends React.Component {
     constructor(props){
@@ -25,8 +26,8 @@ class LineChart extends React.Component {
         x[0].values.push({x:newX, y: newY});
         const _xMax = this.getMax(x[0].values).x;
         const _yMax = this.getMax(x[0].values).y;
-        console.log('_yMax',_yMax);
-        ReactDOM.findDOMNode(this.refs.newYValue).value = 0;
+        ReactDOM.findDOMNode(this.refs.newYValue).value = '';
+        ReactDOM.findDOMNode(this.refs.newYValue).focus();
         this.setState({
                 data: x,
                 xMax: _xMax,
@@ -36,7 +37,6 @@ class LineChart extends React.Component {
     }
 
     getMax(arr){
-        console.log('array', arr);
         const _x = d3.max(arr, function(d) { return d.x; });
         const _y = d3.max(arr, function(d) { return d.y; })
         return {x:_x, y: _y};
@@ -49,8 +49,9 @@ class LineChart extends React.Component {
                 <LineChart
                 legend={true}
                 data={this.state.data}
-                width='60%'
+                width='100%'
                 height={400}
+                color='#FF0000'
                 viewBoxObject={{
                 x: 0,
                 y: 0,
@@ -71,6 +72,7 @@ class LineChart extends React.Component {
             <div className="form-group">
                 <button className="btn btn-default" onClick={this.update.bind(this)}>Add Point</button>
             </div>
+            <Table title="EP 01" data={this.state.data[0].values} />
         </div>
       )
     }
